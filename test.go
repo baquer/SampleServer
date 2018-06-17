@@ -25,7 +25,7 @@ func sayhelloName(w http.ResponseWriter, r *http.Request)
 func login(w http.ResponseWriter, r *http.Request) {
   fmt.Println("method:", r.Method)
    if r.Method == "GET" {
-     t, _ := template.ParseFiles("//Enter File Name")
+     t, _ := template.ParseFiles("login.gtpl")
      t.Execute(w, nil)
    }
    else {
